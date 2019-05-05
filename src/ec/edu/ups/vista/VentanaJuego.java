@@ -18,12 +18,40 @@ import javax.swing.plaf.IconUIResource;
  */
 public class VentanaJuego extends javax.swing.JFrame {
 
-    
+    private int[][] m;
+    private JButton[][] mBotones;
+    Icon iconoEquis;
+    Icon iconoCirculo;
+    int f1;
+    int f2;
+    int f3;
+    int c1;
+    int c2;
+    int c3;
+    int d1;
+    int d2;
     /**
      * Creates new form VentanaJuego
      */
     public VentanaJuego() {
-        
+        initComponents();
+        m = new int[3][3];
+        mBotones = new JButton[3][3];
+        mBotones[0][0] = btn00;
+        mBotones[0][1] = btn01;
+        mBotones[0][2] = btn02;
+        mBotones[1][0] = btn10;
+        mBotones[1][1] = btn11;
+        mBotones[1][2] = btn12;
+        mBotones[2][0] = btn20;
+        mBotones[2][1] = btn21;
+        mBotones[2][2] = btn22;
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        ImageIcon imagenEquis = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/equis.png"));
+        ImageIcon imagenCirculo = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/circulo.png"));
+        iconoEquis = new ImageIcon(imagenEquis.getImage().getScaledInstance(btn00.getWidth(), btn00.getHeight(), Image.SCALE_DEFAULT));
+        iconoCirculo = new ImageIcon(imagenCirculo.getImage().getScaledInstance(btn00.getWidth(), btn00.getHeight(), Image.SCALE_DEFAULT));
     }
 
     /**
@@ -178,6 +206,13 @@ public class VentanaJuego extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
+    
+    
+    
+    
+    
+    
+    
     
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
         // TODO add your handling code here:
