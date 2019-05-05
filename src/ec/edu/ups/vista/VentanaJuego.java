@@ -204,6 +204,29 @@ public class VentanaJuego extends javax.swing.JFrame {
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
         // TODO add your handling code here:
         
+        btn00.setEnabled(true);
+        btn01.setEnabled(true);
+        btn02.setEnabled(true);
+        btn10.setEnabled(true);
+        btn11.setEnabled(true);
+        btn12.setEnabled(true);
+        btn20.setEnabled(true);
+        btn21.setEnabled(true);
+        btn22.setEnabled(true);
+        btn00.setIcon(null);
+        btn01.setIcon(null);
+        btn02.setIcon(null);
+        btn10.setIcon(null);
+        btn11.setIcon(null);
+        btn12.setIcon(null);
+        btn20.setIcon(null);
+        btn21.setIcon(null);
+        btn22.setIcon(null);
+        for(int i = 0; i < m.length; i++){
+            for(int j = 0; j < m.length; j++){
+                m[i][j] = 0;
+            }
+        }
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     
