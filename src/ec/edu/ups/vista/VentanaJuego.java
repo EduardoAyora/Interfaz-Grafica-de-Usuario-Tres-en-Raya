@@ -216,47 +216,65 @@ public class VentanaJuego extends javax.swing.JFrame {
     
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
         // TODO add your handling code here:
-       
+        btn00.setIcon(iconoEquis);
+        m[0][0] = 1;
+        btn00.setEnabled(false);
     }//GEN-LAST:event_btn00ActionPerformed
 
     private void btn01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn01ActionPerformed
         // TODO add your handling code here:
-       
+        btn01.setIcon(iconoEquis);
+        m[0][1] = 1;
+        btn01.setEnabled(false);
     }//GEN-LAST:event_btn01ActionPerformed
 
     private void btn02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn02ActionPerformed
         // TODO add your handling code here:
-     
+        btn02.setIcon(iconoEquis);
+        m[0][2] = 1;
+        btn02.setEnabled(false);
     }//GEN-LAST:event_btn02ActionPerformed
 
     private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
         // TODO add your handling code here:
-      
+        btn10.setIcon(iconoEquis);
+        m[1][0] = 1;
+        btn10.setEnabled(false);
     }//GEN-LAST:event_btn10ActionPerformed
 
     private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
         // TODO add your handling code here:
-       
+        btn11.setIcon(iconoEquis);
+        m[1][1] = 1;
+        btn11.setEnabled(false);
     }//GEN-LAST:event_btn11ActionPerformed
 
     private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
         // TODO add your handling code here:
-      
+        btn12.setIcon(iconoEquis);
+        m[1][2] = 1;
+        btn12.setEnabled(false);
     }//GEN-LAST:event_btn12ActionPerformed
 
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
         // TODO add your handling code here:
-      
+        btn20.setIcon(iconoEquis);
+        m[2][0] = 1;
+        btn20.setEnabled(false);
     }//GEN-LAST:event_btn20ActionPerformed
 
     private void btn21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn21ActionPerformed
         // TODO add your handling code here:
-       
+        btn21.setIcon(iconoEquis);
+        m[2][1] = 1;
+        btn21.setEnabled(false);
     }//GEN-LAST:event_btn21ActionPerformed
 
     private void btn22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn22ActionPerformed
         // TODO add your handling code here:
-        
+        btn22.setIcon(iconoEquis);
+        m[2][2] = 1;
+        btn22.setEnabled(false);
     }//GEN-LAST:event_btn22ActionPerformed
 
     /**
