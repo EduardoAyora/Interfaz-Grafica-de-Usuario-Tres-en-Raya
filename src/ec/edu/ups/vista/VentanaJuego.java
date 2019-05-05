@@ -229,7 +229,18 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
-    
+    private void verificarGanador(){
+        
+        if(f1 == 3 || f2 == 3 || f3 == 3 || c1 == 3 || c2 == 3 || c3 == 3 || d1 == 3 || d2 == 3){
+            deshabilitarBotones();
+            JOptionPane.showMessageDialog(null, "¡Gano X!");
+        }
+        if(f1 == 30 || f2 == 30 || f3 == 30 || c1 == 30 || c2 == 30 || c3 == 30 || d1 == 30 || d2 == 30){
+            deshabilitarBotones();
+            JOptionPane.showMessageDialog(null, "¡Gano O!");
+        }
+        
+    }
     
     private void calcular(){
         
@@ -246,6 +257,7 @@ public class VentanaJuego extends javax.swing.JFrame {
     
     private void turnoMaquina(){
         
+        calcular();
         
         if(f1 == 20){
             for(int i = 0; i < mBotones.length; i++){
@@ -473,6 +485,7 @@ public class VentanaJuego extends javax.swing.JFrame {
             
         }
         calcular();
+        verificarGanador();
     }
     
     private void deshabilitarBotones(){
