@@ -231,11 +231,261 @@ public class VentanaJuego extends javax.swing.JFrame {
 
     
     
+    private void calcular(){
+        
+        f1 = m[0][0] + m[0][1] + m[0][2];
+        f2 = m[1][0] + m[1][1] + m[1][2];
+        f3 = m[2][0] + m[2][1] + m[2][2];
+        c1 = m[0][0] + m[1][0] + m[2][0];
+        c2 = m[0][1] + m[1][1] + m[2][1];
+        c3 = m[0][2] + m[1][2] + m[2][2];
+        d1 = m[0][0] + m[1][1] + m[2][2];
+        d2 = m[0][2] + m[1][1] + m[2][0];
+        
+    }
     
+    private void turnoMaquina(){
+        
+        
+        if(f1 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[0][i].isEnabled()){
+                    mBotones[0][i].setIcon(iconoCirculo);
+                    m[0][i] = 10;
+                    mBotones[0][i].setEnabled(false);
+                }
+            }
+        }else if(f2 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[1][i].isEnabled()){
+                    mBotones[1][i].setIcon(iconoCirculo);
+                    m[1][i] = 10;
+                    mBotones[1][i].setEnabled(false);
+                }
+            }
+        }else if(f3 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[2][i].isEnabled()){
+                    mBotones[2][i].setIcon(iconoCirculo);
+                    m[2][i] = 10;
+                    mBotones[2][i].setEnabled(false);
+                }
+            }
+        }else if(c1 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][0].isEnabled()){
+                    mBotones[i][0].setIcon(iconoCirculo);
+                    m[i][0] = 10;
+                    mBotones[i][0].setEnabled(false);
+                }
+            }
+        }else if(c2 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][1].isEnabled()){
+                    mBotones[i][1].setIcon(iconoCirculo);
+                    m[i][1] = 10;
+                    mBotones[i][1].setEnabled(false);
+                }
+            }
+        }else if(c3 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][2].isEnabled()){
+                    mBotones[i][2].setIcon(iconoCirculo);
+                    m[i][2] = 10;
+                    mBotones[i][2].setEnabled(false);
+                }
+            }
+        }else if(d1 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][i].isEnabled()){
+                    mBotones[i][i].setIcon(iconoCirculo);
+                    m[i][i] = 10;
+                    mBotones[i][i].setEnabled(false);
+                }
+            }
+        }else if(d2 == 20){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][2-i].isEnabled()){
+                    mBotones[i][2-i].setIcon(iconoCirculo);
+                    m[i][2-i] = 10;
+                    mBotones[i][2-i].setEnabled(false);
+                }
+            }
+        }else if(f1 == 2 || f1 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[0][i].isEnabled()){
+                    mBotones[0][i].setIcon(iconoCirculo);
+                    m[0][i] = 10;
+                    mBotones[0][i].setEnabled(false);
+                }
+            }
+        }else if(f2 == 2 || f2 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[1][i].isEnabled()){
+                    mBotones[1][i].setIcon(iconoCirculo);
+                    m[1][i] = 10;
+                    mBotones[1][i].setEnabled(false);
+                }
+            }
+        }else if(f3 == 2 || f3 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[2][i].isEnabled()){
+                    mBotones[2][i].setIcon(iconoCirculo);
+                    m[2][i] = 10;
+                    mBotones[2][i].setEnabled(false);
+                }
+            }
+        }else if(c1 == 2 || c1 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][0].isEnabled()){
+                    mBotones[i][0].setIcon(iconoCirculo);
+                    m[i][0] = 10;
+                    mBotones[i][0].setEnabled(false);
+                }
+            }
+        }else if(c2 == 2 || c2 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][1].isEnabled()){
+                    mBotones[i][1].setIcon(iconoCirculo);
+                    m[i][1] = 10;
+                    mBotones[i][1].setEnabled(false);
+                }
+            }
+        }else if(c3 == 2 || c3 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][2].isEnabled()){
+                    mBotones[i][2].setIcon(iconoCirculo);
+                    m[i][2] = 10;
+                    mBotones[i][2].setEnabled(false);
+                }
+            }
+        }else if(d1 == 2 || d1 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][i].isEnabled()){
+                    mBotones[i][i].setIcon(iconoCirculo);
+                    m[i][i] = 10;
+                    mBotones[i][i].setEnabled(false);
+                }
+            }
+        }else if(d2 == 2 || d2 == 3){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][2-i].isEnabled()){
+                    mBotones[i][2-i].setIcon(iconoCirculo);
+                    m[i][2-i] = 10;
+                    mBotones[i][2-i].setEnabled(false);
+                }
+            }
+        }else if(f1 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[0][i].isEnabled()){
+                    mBotones[0][i].setIcon(iconoCirculo);
+                    m[0][i] = 10;
+                    mBotones[0][i].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(f2 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[1][i].isEnabled()){
+                    mBotones[1][i].setIcon(iconoCirculo);
+                    m[1][i] = 10;
+                    mBotones[1][i].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(f3 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[2][i].isEnabled()){
+                    mBotones[2][i].setIcon(iconoCirculo);
+                    m[2][i] = 10;
+                    mBotones[2][i].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(c1 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][0].isEnabled()){
+                    mBotones[i][0].setIcon(iconoCirculo);
+                    m[i][0] = 10;
+                    mBotones[i][0].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(c2 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][1].isEnabled()){
+                    mBotones[i][1].setIcon(iconoCirculo);
+                    m[i][1] = 10;
+                    mBotones[i][1].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(c3 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][2].isEnabled()){
+                    mBotones[i][2].setIcon(iconoCirculo);
+                    m[i][2] = 10;
+                    mBotones[i][2].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(d1 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][i].isEnabled()){
+                    mBotones[i][i].setIcon(iconoCirculo);
+                    m[i][i] = 10;
+                    mBotones[i][i].setEnabled(false);
+                    break;
+                }
+            }
+        }else if(d2 == 10){
+            for(int i = 0; i < mBotones.length; i++){
+                if(mBotones[i][2-i].isEnabled()){
+                    mBotones[i][2-i].setIcon(iconoCirculo);
+                    m[i][2-i] = 10;
+                    mBotones[i][2-i].setEnabled(false);
+                    break;
+                }
+            }
+        }else{
+            boolean bandera = false;
+            for(int i = 0; i < mBotones.length; i++){
+                for(int j = 0; j < mBotones.length; j++){
+                    if(mBotones[i][j].isEnabled()){
+                        bandera = true;
+                        break;
+                    }
+                }
+            }
+            if(bandera){
+                int x = (int)(Math.random()*3);
+                int y = (int)(Math.random()*3);
+                while(mBotones[x][y].isEnabled() == false){
+                    x = (int)(Math.random()*3);
+                    y = (int)(Math.random()*3);
+                }
+                mBotones[x][y].setIcon(iconoCirculo);
+                m[x][y] = 10;
+                mBotones[x][y].setEnabled(false);
+            }else{
+                JOptionPane.showMessageDialog(null, "¡Empate!");
+            }
+            
+        }
+        calcular();
+    }
     
-    
-    
-    
+    private void deshabilitarBotones(){
+        btn00.setEnabled(false);
+        btn01.setEnabled(false);
+        btn02.setEnabled(false);
+        btn10.setEnabled(false);
+        btn11.setEnabled(false);
+        btn12.setEnabled(false);
+        btn20.setEnabled(false);
+        btn21.setEnabled(false);
+        btn22.setEnabled(false);
+    }
     
     private void btn00ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn00ActionPerformed
         // TODO add your handling code here:
