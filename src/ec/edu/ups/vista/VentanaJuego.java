@@ -13,8 +13,14 @@ import javax.swing.JOptionPane;
 import javax.swing.plaf.IconUIResource;
 
 /**
+ * VentanaJuego.
  *
- * @author Estudiante
+ * Clase con interfaz gráfica.
+ *
+ * @version 1.2
+ * @since 2019
+ * @author Eduardo Ayora
+ * @see http://ups.edu.ec
  */
 public class VentanaJuego extends javax.swing.JFrame {
 
