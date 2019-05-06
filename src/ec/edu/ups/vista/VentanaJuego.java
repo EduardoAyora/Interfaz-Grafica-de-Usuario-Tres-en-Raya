@@ -31,7 +31,9 @@ public class VentanaJuego extends javax.swing.JFrame {
     int d1;
     int d2;
     /**
-     * Creates new form VentanaJuego
+     * VentanaJuego
+     * Constructor de la clase
+     * inicializa todos los atributos de la clase.
      */
     public VentanaJuego() {
         initComponents();
@@ -201,6 +203,11 @@ public class VentanaJuego extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * btnReiniciarActionPerformed
+     * Evento de accion para reiniciar el juego
+     * @param evt evento al hacer clic
+     */
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
         // TODO add your handling code here:
         
@@ -229,6 +236,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
+    /**
+     * verificarGanador
+     * metodo que verifica si el jugador a ganado la partida o la maquina
+     */
     private void verificarGanador(){
         
         if(f1 == 3 || f2 == 3 || f3 == 3 || c1 == 3 || c2 == 3 || c3 == 3 || d1 == 3 || d2 == 3){
@@ -242,6 +253,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         
     }
     
+    /**
+     * calcular
+     * metodo usado para verificar si hay un ganador y por la maquina para que ejecute una accion coherente.
+     */
     private void calcular(){
         
         f1 = m[0][0] + m[0][1] + m[0][2];
@@ -255,6 +270,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         
     }
     
+    /**
+     * turnoMaquina
+     * pasos que sigue la maquina para jugar medianamente bien al juego.
+     */
     private void turnoMaquina(){
         
         calcular();
@@ -488,6 +507,10 @@ public class VentanaJuego extends javax.swing.JFrame {
         verificarGanador();
     }
     
+    /**
+     * deshabilitarBotones
+     * Desabilita los botones una vez que hay un ganador
+     */
     private void deshabilitarBotones(){
         btn00.setEnabled(false);
         btn01.setEnabled(false);
